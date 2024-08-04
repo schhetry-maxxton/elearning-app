@@ -1,0 +1,18 @@
+.card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.card-body {
+    text-align: center;
+}

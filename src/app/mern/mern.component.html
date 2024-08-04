@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-3" *ngFor="let card of cards">
+        <div class="card mb-4">
+          <img [src]="card.imageUrl" class="card-img-top" alt="{{ card.title }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ card.title }}</h5>
+            <p class="card-text">{{ card.text }}</p>
+            <div class="btn btn-primary"><a routerLink="dataAnalysis" class="dropdown-item" >Read More</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+
+        <div class="header" style="text-align: center;">
+          <h1 > Upcoming Live MERN Courses </h1>
+        </div>
+        
+      <table class="table table-success table-hover" border="2">
+        <thead>
+          <tr>
+            <!-- <th>ID</th> -->
+            <th>Course</th>
+            <th>Date</th>
+            <th>Faculty</th>
+            <th>Duration</th>
+            <th>Price</th>
+            </tr>
+         </thead>
+       <tbody>
+          <tr *ngFor="let course of courses">
+            <td>{{ course.courseTitle }}</td>
+            <td>{{ course.upcomingCourseDate }}</td>
+            <td>{{ course.courseLecturer }}</td>
+            <td>{{ course.duration }}</td>
+            <td>{{ course.courseFees }}</td>
+            </tr>
+          </tbody>
+      </table>
+      </div>
+
+  

@@ -1,0 +1,55 @@
+/* .container{
+    height: auto;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(164, 146, 146);
+    border-radius: 10px;
+    padding:  20px 10px;
+} */
+
+h1{
+    color: crimson;
+    padding: auto;
+}
+.container{
+    height: auto;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    /* border: 1px solid rgb(164, 146, 146); */
+    border-radius: 10px;
+    padding:  20px 10px;
+    /* background-color: antiquewhite; */
+    padding: 20px;
+    margin: auto;
+}
+.loginForm{
+    margin: auto;
+    height: fit-content;
+}
+
+
+header{
+    text-align: center;
+    color: cadetblue;
+    padding-bottom: 40px;
+}
+
+/* #radio{
+    display: flex;
+    justify-content: space-around;
+} */
+
+.bottom{
+    text-align: center;
+}
+
+.login-button{
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 30px;
+
+}

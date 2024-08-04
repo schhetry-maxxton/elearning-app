@@ -1,0 +1,124 @@
+<div class="container ">
+    <div class="row">
+        <!-- Card 1: Excel -->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Excel" class="card-img-top" alt="Excel">
+                <div class="card-body">
+                    <h5 class="card-title">Excel</h5>
+                    <p class="card-text">Learn Excel for data analysis, including functions, formulas, and pivot tables.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 2: Tableau -->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Tableau" class="card-img-top" alt="Tableau">
+                <div class="card-body">
+                    <h5 class="card-title">Tableau</h5>
+                    <p class="card-text">Master Tableau for interactive data visualization and dashboard creation.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 3: Power BI -->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Power+BI" class="card-img-top" alt="Power BI">
+                <div class="card-body">
+                    <h5 class="card-title">Power BI</h5>
+                    <p class="card-text">Explore Power BI for business intelligence and data reporting.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 4: Google Data Studio -->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Google+Data+Studio" class="card-img-top" alt="Google Data Studio">
+                <div class="card-body">
+                    <h5 class="card-title">Google Data Studio</h5>
+                    <p class="card-text">Get to know Google Data Studio for creating reports and dashboards.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 5: SAS -->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=SAS" class="card-img-top" alt="SAS">
+                <div class="card-body">
+                    <h5 class="card-title">SAS</h5>
+                    <p class="card-text">Dive into SAS for advanced analytics and statistical data analysis.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 6: SPSS -->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=SPSS" class="card-img-top" alt="SPSS">
+                <div class="card-body">
+                    <h5 class="card-title">SPSS</h5>
+                    <p class="card-text">Learn SPSS for statistical analysis and data management.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 7: QlikView -->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=QlikView" class="card-img-top" alt="QlikView">
+                <div class="card-body">
+                    <h5 class="card-title">QlikView</h5>
+                    <p class="card-text">Explore QlikView for business intelligence and data visualization.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 8: Domo -->
+        <div class="col-md-3 mb-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Domo" class="card-img-top" alt="Domo">
+                <div class="card-body">
+                    <h5 class="card-title">Domo</h5>
+                    <p class="card-text">Understand Domo for DI, visualization, and business intelligence.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container">
+
+    <div class="header" style="text-align: center;">
+      <h1> Upcoming Live Data Analysis and Visualization Courses </h1>
+    </div>
+    
+  <table class="table table-success table-hover" border="2">
+    <thead>
+      <tr>
+        <!-- <th>ID</th> -->
+        <th>Course</th>
+        <th>Date</th>
+        <th>Faculty</th>
+        <th>Duration</th>
+        <th>Price</th>
+        </tr>
+     </thead>
+   <tbody>
+      <tr *ngFor="let course of courses">
+        <td>{{ course.courseTitle }}</td>
+        <td>{{ course.upcomingCourseDate }}</td>
+        <td>{{ course.courseLecturer }}</td>
+        <td>{{ course.duration }}</td>
+        <td>{{ course.courseFees }}</td>
+        </tr>
+      </tbody>
+  </table>
+  </div>
+

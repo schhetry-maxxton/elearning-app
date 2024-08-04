@@ -1,0 +1,37 @@
+
+h5{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+#container{
+    height: auto;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    /* border: 1px solid rgb(164, 146, 146); */
+    border-radius: 10px;
+    padding:  20px 10px;
+    /* background-color: antiquewhite; */
+}
+
+.container-fluid{
+    padding: 20px;
+}
+
+#address-map{
+   
+}
+
+.row{
+    margin: auto;
+}
+
+.save{
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 30px;
+    justify-content: center;
+}

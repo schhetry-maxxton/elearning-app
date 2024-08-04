@@ -1,0 +1,122 @@
+<div class="container my-5">
+    <div class="row">
+        <!-- Card 1: Project Management -->
+        <div class="col-md-3 mb-4">
+            <div class="card card-hover">
+                <img src="../Assets/images/pmp/project.jpg" class="card-img-top" alt="Project Management">
+                <div class="card-body">
+                    <h5 class="card-title">Project Management</h5>
+                    <p class="card-text">Learn the skills needed to manage projects effectively and deliver successful outcomes.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 2: Product Management -->
+        <div class="col-md-3 mb-4">
+            <div class="card card-hover">
+                <img src="../Assets/images/pmp/pmp.jpg" class="card-img-top" alt="Product Management">
+                <div class="card-body">
+                    <h5 class="card-title">Product Management</h5>
+                    <p class="card-text">Master the art of managing product life cycles from conception to launch.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 3: Risk Management -->
+        <div class="col-md-3 mb-4">
+            <div class="card card-hover">
+                <img src="../Assets/images/pmp/risk.jpg" class="card-img-top" alt="Risk Management">
+                <div class="card-body">
+                    <h5 class="card-title">Risk Management</h5>
+                    <p class="card-text">Identify and mitigate risks to safeguard your projects and business.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 4: Operations Management -->
+        <div class="col-md-3 mb-4">
+            <div class="card card-hover">
+                <img src="../Assets/images/pmp/operation.jpg" class="card-img-top" alt="Operations Management">
+                <div class="card-body">
+                    <h5 class="card-title">Operations Management</h5>
+                    <p class="card-text">Enhance your skills in optimizing business operations and improving efficiency.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 5: Change Management -->
+        <div class="col-md-3 mb-4">
+            <div class="card card-hover">
+                <img src="../Assets/images/pmp/change.jpg" class="card-img-top" alt="Change Management">
+                <div class="card-body">
+                    <h5 class="card-title">Change Management</h5>
+                    <p class="card-text">Effectively manage and lead change initiatives within your organization.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 6: Strategic Management -->
+        <div class="col-md-3 mb-4">
+            <div class="card card-hover">
+                <img src="../Assets/images/pmp/strategic.jpg" class="card-img-top" alt="Strategic Management">
+                <div class="card-body">
+                    <h5 class="card-title">Strategic Management</h5>
+                    <p class="card-text">Develop strategies to drive long-term business success and competitive advantage.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 7: Supply Chain Management -->
+        <div class="col-md-3 mb-4">
+            <div class="card card-hover">
+                <img src="../Assets/images/pmp/supplychange.jpg" class="card-img-top" alt="Supply Chain Management">
+                <div class="card-body">
+                    <h5 class="card-title">Supply Chain Management</h5>
+                    <p class="card-text">Manage the end-to-end supply chain process to ensure efficiency and effectiveness.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Card 8: Financial Management -->
+        <div class="col-md-3 mb-4">
+            <div class="card card-hover">
+                <img src="../Assets/images/pmp/finance.jpg" class="card-img-top" alt="Financial Management">
+                <div class="card-body">
+                    <h5 class="card-title">Financial Management</h5>
+                    <p class="card-text">Gain expertise in managing financial resources and making informed financial decisions.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="header" style="text-align: center;">
+      <h1 > Upcoming Live Management Courses </h1>
+    </div>
+    
+  <table class="table table-primary  table-hover" border="2">
+    <thead>
+      <tr>
+        <!-- <th>ID</th> -->
+        <th>Course</th>
+        <th>Date</th>
+        <th>Faculty</th>
+        <th>Duration</th>
+        <th>Price</th>
+        </tr>
+     </thead>
+   <tbody>
+      <tr *ngFor="let course of courses">
+        <td>{{ course.courseTitle }}</td>
+        <td>{{ course.upcomingCourseDate }}</td>
+        <td>{{ course.courseLecturer }}</td>
+        <td>{{ course.duration }}</td>
+        <td>{{ course.courseFees }}</td>
+        </tr>
+      </tbody>
+  </table>
+  </div>
+

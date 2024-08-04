@@ -1,0 +1,66 @@
+
+    <div class="container-fluid bg-body-secondary mg-2" >
+      <!-- app.component.html -->
+      <div class="container " id="address-map">
+        <div class="row d-flex flex-column flex-lg-row align-items-center">
+          <!-- Map Section -->
+          <div class="col-12 col-lg-6 d-flex justify-content-center mb-3 mb-lg-0">
+            <app-map></app-map>
+          </div>
+          <!-- Address Section -->
+          <div class="col-12 col-lg-6 d-flex justify-content-center">
+            <app-address class="ms-lg-4"></app-address>
+          </div>
+        </div>
+      </div>
+      
+
+        
+        <br><br>
+        <div class="container" id="container">
+            <h4 style="color:darkcyan; text-align: center;" >Fill the form to Contact us</h4>
+        <form [formGroup]="angForm" novalidate>
+            
+              <div class="form-group">
+                  <label>Name:</label>
+                  <input class="form-control" formControlName="name" type="text">
+              </div>
+              <div *ngIf="angForm.controls['name'].invalid && (angForm.controls['name'].dirty || angForm.controls['name'].touched)" 
+               class="alert alert-danger">
+                  <div *ngIf="angForm.controls['name'].errors">
+                    Name is required.
+                  </div>
+               </div>
+               <div class="form-group">
+                  <label>Address:</label>
+                  <input class="form-control" formControlName="address" type="text">
+              </div>
+              <div *ngIf="angForm.controls['address'].invalid && (angForm.controls['address'].dirty || angForm.controls['address'].touched)" 
+                 class="alert alert-danger">
+                  <div *ngIf="angForm.controls['address'].errors">
+                    Address is required.
+                  </div>
+              </div>
+              <div class="form-group">
+                <label>Contact No. :</label>
+                <input class="form-control" formControlName="contact" type="number" required maxlength="10" minlength="10">
+            </div>
+              <div *ngIf="angForm.controls['contact'].invalid && (angForm.controls['contact'].dirty || angForm.controls['contact'].touched)" 
+                 class="alert alert-danger">
+                  <div *ngIf="angForm.controls['contact'].errors">
+                    Contact no. is required.
+                  </div>
+              </div>
+              <br>
+              <div class="form-group" style="text-align: center;">
+              <button class="save" type="submit" style="justify-content: center;"
+                  [disabled]="angForm.pristine || angForm.invalid" class="btn btn-success">
+                  Save
+              </button>
+            </div>
+        </form>
+        <br />
+        <!-- <p>Form value: {{ angForm.value | json }}</p>
+        <p>Form status: {{ angForm.status | json }}</p> -->
+      </div>
+    </div>

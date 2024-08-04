@@ -1,0 +1,55 @@
+/* Container for accordion with padding */
+.accordion-container {
+    padding-left: 4rem; /* Padding on the left */
+    padding-right: 4rem; /* Padding on the right */
+    margin-bottom: 2rem; /* Space between accordion items */
+}
+
+/* Accordion items with space in between */
+.accordion-item {
+    margin-bottom: 1rem; /* Space between accordion items */
+    border-radius: 0.5rem; /* Rounded corners for each accordion item */
+}
+
+/* Accordion button styles */
+.accordion-button {
+    border-radius: 0.5rem; /* Rounded corners for the button */
+    padding: 1rem; /* Padding for the button */
+    font-family: 'Arial', sans-serif; /* Consistent font */
+    font-weight: 300; /* Font weight */
+    color: #333; /* Text color */
+    font-size: 1rem; /* Font size */
+    background-color:rgb(118, 164, 189); /* Background color */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    outline: none; /* Remove default outline */
+}
+
+/* Accordion button hover effect */
+.accordion-button:hover {
+    background-color: #e9ecef; /* Slightly darker background on hover */
+}
+
+/* Accordion button when expanded */
+.accordion-button:not(.collapsed) {
+    background-color: #e9ecef; /* Background color when expanded */
+}
+
+/* Accordion collapse styling */
+.accordion-collapse {
+    border-top: 1px solid #ddd; /* Border between button and collapse body */
+}
+
+/* Accordion body styling */
+.accordion-body {
+    font-family: 'Arial', sans-serif; /* Consistent font */
+    font-weight: 300; /* Font weight */
+    color: #555; /* Text color */
+    font-size: 0.875rem; /* Font size */
+    padding: 1rem; /* Padding for body content */
+}
+
+/* Prevent default focus outline effect */
+.accordion-button:focus {
+    box-shadow: none; /* Remove box-shadow on focus */
+    outline: none; /* Remove outline on focus */
+}
